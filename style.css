@@ -75,7 +75,7 @@ body {
 h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
 }
 
 
@@ -86,8 +86,10 @@ h3 {
 }
 
 .tabheader__item {
-    line-height: 2.1rem;
+    line-height: 1.8rem;
     cursor: pointer;
+    transition: 500ms;
+    margin-top: 10px;
 }
 
 .hide {
@@ -96,4 +98,14 @@ h3 {
 
 .show {
 display: block;
+}
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {   
+    from{opacity: 0.1;}
+    to{opacity: 1;}
 }
